@@ -67,7 +67,7 @@ class CacheRoute extends Route {
         this.keepliveState = cacheState[cacheId].state
       }
       this.render = ()=>{
-        return <div ref={node => (this.parentNode = node)} />
+        return <div className="react-keepalive-router_keepliveRoute" ref={node => (this.parentNode = node)} />
       }
 
     }
