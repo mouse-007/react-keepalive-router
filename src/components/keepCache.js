@@ -59,6 +59,7 @@ const CacheKeepItem = memo(({cacheId, children, state, dispatch, lastState,load 
     }
   }, [state])
   return <div ref={curDom}
+      className="react-keepalive-router_keepCache"
       style={{display: state === ACTION_UNACTIVED ? 'none' : 'block' }}
          >
     {(state === ACTION_ACTIVE || state === ACTION_ACTIVED || state === ACITON_UNACTIVE || state === ACTION_UNACTIVED) ? <UpdateComponent>{children()}</UpdateComponent> : null}
